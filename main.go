@@ -7,8 +7,6 @@ import (
 	"log"
 )
 
-type Record []string
-
 func getCsvReader(r io.Reader, p runParams) *csv.Reader {
 	res := csv.NewReader(r)
 	res.Comma = p.separator
